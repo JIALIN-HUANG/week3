@@ -3,6 +3,53 @@
     src: url("./assest/SpaceGrotesk-Regular.woff2") format("woff2");
   }
 
+  @font-face {
+    font-family: "Space Grotesk Bold";
+    src: url("./assest/SpaceGrotesk-Bold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Yusei Magic";
+    src: url("./assest/YuseiMagic-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Lobster";
+    src: url("./assest/Lobster-Regular.ttf") format("truetype");
+  }
+  
+  .bg{
+        background-color: darkcyan;
+  }
+
   h1 {
-      font-family: "Space Grotest Regular";
+    font-family: Space Grotesk Regular;
+    }
+
+  .paragraph{
+    font-family: "Space Grotesk Regular";
+    font-size: 3vw;
+    color: burlywood;
+    transform: rotate(30deg);
+
+  }
+
+  .pink{
+      color: pink;
+      border-bottom: 1px solid purple;
+      font-size: 67px;
+  }
+
+  .invisible:hover{
+opacity: 0;
+  }
+
+  .changefont:hover{
+    font-family: 'Yusei Magic', sans-serif;
+    color: black;
+  }
+
+  .hjk:hover{
+    font-family: 'Lobster', cursive;
+    color: darkgrey;
   }
