@@ -1,39 +1,51 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Week 3</title>
-    <meta name="description" content="Your description goes here">
-    <meta name="author" content="Your Name">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative Art</title>
 
-    <!-- Link to your favicon -->
-    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 
-    <!-- Link to your stylesheet -->
-    <link rel="stylesheet" href="./style.css">
+    <!-- add defer to tell the browser to apply javascript after page has been completely parsed -->
+    <script type="text/javascript" src="./script.js" defer></script>
+
 </head>
 
-<body>
-    <div class="bg">
-    <h1>Space Grotest Regular</h1>
-    <h2>Space Grotest Bold</h2>
-    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis cursus sem, eu feugiat massa
-        tristique eu. Quisque massa<span class="invisible"> justo, luctus et consequat quis, gravida ac ex. Fusce sodales, urna non ultricies
-        ullamcorper,</span> arcu mauris ultrices sapien, <span class="pink"> bibendum tellus leo sed lectus. Sed bibendum ante eget augue
-        accumsan ullamcorper. Quisque ac magna tortor. Pellentesque sodales auctor odio, ac aliquam tellus tristique id.
-        Nulla facilisi. Pellentesque pretium ligula nunc, </span>ac faucibus tellus bibendum a. Nam tincidunt aliquam nisi, a
-        cursus enim lobortis auctor. <span class="changefont"> rhoncus quam sed purus laoreet lobortis. Proin eget vestibulum odio, at
-        finibus risus.</span> Sed porttitor commodo odio eu dapibus.
-            <br>
-        Phasellus at erat id lectus ullamcorper fermentum. Aliquam rhoncus diam et nisi tincidunt iaculis. Vestibulum
-        facilisis facilisis mi. Vivamus ultrices leo maximus est sodales commodo. Pellentesque volutpat magna a nulla
-        facilisis aliquet. Proin nulla <span class="invisible">, feugiat et mollis sit amet, pellentesque nec tellus. Suspendisse at
-        interdum mauris, imperdiet accumsan quam. Cras vel </span>efficitur ipsum. Suspendisse et lorem mollis, convallis magna
-        bibendum, feugiat nibh. Vestibulum vitae ex faucibus, <span class="hjk"> sapien quis, scelerisque erat. Duis sollicitudin
-        enim eu arcu sagittis, sed elementum magna efficitur. Vestibulum</span> malesuada facilisis ullamcorper.</p>
+<body class="dotsShow">
 
+    <div id="menu">
+        <a class="acolor" href="./index.html" id="yumenoHana">Yume no Hana</a>
+        <a class="acolor" href="./menu/about.html" id="about">About Hana</a>
+        <a class="acolor" href="./menu/gallery.html" id="gallery">Hana Gallery</a>
+        <a class="acolor" href="./menu/demo.html" id="demo">Startup Demo</a>
     </div>
+
+    <img class="angel" src="./pictures/IMG_1130.JPG">
+    <div class="rectangle1 rectangle"></div>
+    <!-- <div class="rectangle2 rectangle"></div> -->
+    <div class="rectangle3 rectangle"></div>
+    <div class="rectangle4 rectangle"></div>
+
+    <div class="p5js">
+        <iframe style="width: 1050px; height: 800px; overflow: hidden;" scrolling="no" frameborder="0"
+            src="https://editor.p5js.org/huanj928/full/VdqP5rgmk"></iframe>
+    </div>
+
+    <div class="notes">
+        <span id="copyright"> All Rights reserved <br> <strong class="show-angel"> © Jialin Huang </strong> </span>
+        <br>
+        <span id="generativeArt">a-generative-art</span>
+    </div>
+
+    <div class="circle-container">
+        <div class="black-circle"></div>
+        <div class="white-circle"></div>
+    </div>
+    
 </body>
 
 </html>

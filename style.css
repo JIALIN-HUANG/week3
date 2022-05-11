@@ -1,55 +1,148 @@
 @font-face {
-    font-family: "Space Grotesk Regular";
-    src: url("./assest/SpaceGrotesk-Regular.woff2") format("woff2");
+    font-family: ProggyDotted;
+    src: url(./font/ProggyDotted\ Regular.otf) format('truetype');
+}
+
+@font-face {
+  font-family: ProggySquare;
+  src: url(./font/ProggySquare.ttf) format('truetype');
+}
+
+body {
+    /* 　reference from : https://stackoverflow.com/questions/55364127/making-a-dotted-grid-with-css */
+    background: white;
+    /* background-image: radial-gradient(black 2.5px, transparent 0); */
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+
+    /* border: 1rem solid red; */
   }
 
-  @font-face {
-    font-family: "Space Grotesk Bold";
-    src: url("./assest/SpaceGrotesk-Bold.woff2") format("woff2");
+  .dots{
+    color: white;
   }
 
-  @font-face {
-    font-family: "Yusei Magic";
-    src: url("./assest/YuseiMagic-Regular.ttf") format("truetype");
+  .dotsShow{
+    background-image: radial-gradient(black 2.5px, transparent 0);
   }
 
-  @font-face {
-    font-family: "Lobster";
-    src: url("./assest/Lobster-Regular.ttf") format("truetype");
-  }
-  
-  .bg{
-        background-color: darkcyan;
+  .circle-container {
+    position: absolute;
+    top: 87vh;
+    left: 80vw;
   }
 
-  h1 {
-    font-family: Space Grotesk Regular;
+  .rectangle{
+    background-color: white;
+  }
+
+  .rectangleBlack{
+    background-color: black;
+  }
+
+  .rectangle1{
+position: absolute;
+color: white;
+width: 100vw;
+height: 3vh;
+top: 0%;
+  }
+
+  .rectangle2{
+    position: absolute;
+    width: 100vw;
+    height: 3vh;
+    bottom: 0%;
+      }
+
+.rectangle3{
+   position: absolute;
+   width: 3vw;
+   height: 100vh;
+   right: 0%;
+  top: 0%;
+  }
+
+  .rectangle4{
+    position: absolute;
+    width: 3vw;
+    height: 100vh;
+    left: 0%;
+   top: 0%;
+   }
+
+  .acolor { 
+    color: black;
+      text-decoration: none; 
     }
 
-  .paragraph{
-    font-family: "Space Grotesk Regular";
-    font-size: 3vw;
-    color: burlywood;
-    transform: rotate(30deg);
+  #menu{
+      margin-top: 5vh;
+      margin-left: 3vw;
+      font-family: ProggyDotted;
+      font-size: 1.5rem;
 
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      place-items: center;
   }
 
-  .pink{
-      color: pink;
-      border-bottom: 1px solid purple;
-      font-size: 67px;
+  .p5js{
+    position: absolute;
+    left: 5vw;
+    top: 10vh;
   }
 
-  .invisible:hover{
-opacity: 0;
+  .notes{
+    margin-bottom: 6vh;
+    margin-left: 3vw;
+      position: fixed;
+    font-family: ProggyDotted;
+    font-size: 1.5rem;
+    bottom: 6%;
+    right: 3%;
+    line-height: 1.8;
+    text-align: right;
   }
 
-  .changefont:hover{
-    font-family: 'Yusei Magic', sans-serif;
-    color: black;
+  .marginSide{
+      position: absolute;
+      border-color: aliceblue;
+border-top: 1rem;
   }
 
-  .hjk:hover{
-    font-family: 'Lobster', cursive;
-    color: darkgrey;
+  .angel{
+    position: absolute;
+    top: 15rem;
+    right: 3rem;
+    width: 300px;
+    display: none;
+  }
+
+  .angel.active{
+    display: flex;
+  }
+
+/* canvas.dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }   */
+
+  .black-circle {
+    background: black;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 1rem;
+  }
+  
+  .white-circle {
+    background: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 1rem;
   }
